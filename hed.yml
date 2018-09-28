@@ -1,6 +1,8 @@
 name: hed
 channels:
   - menpo
+  - caffe2
+  - conda-forge
   - anaconda
   - defaults
 dependencies:
@@ -10,15 +12,12 @@ dependencies:
   - blas=1.0=mkl
   - bleach=2.1.3=py36_0
   - bzip2=1.0.6=h14c3975_5
-  - ca-certificates=2018.03.07=0
   - cairo=1.14.12=h7636065_2
-  - certifi=2018.4.16=py36_0
   - cycler=0.10.0=py36h93f1223_0
   - dbus=1.13.2=h714fa37_1
   - decorator=4.3.0=py36_0
   - entrypoints=0.2.3=py36h1aec115_2
   - expat=2.2.5=he0dffb1_0
-  - ffmpeg=4.0=h04d0a96_0
   - fontconfig=2.12.6=h49f89f6_0
   - freetype=2.8=hab7d2ae_1
   - future=0.16.0=py36_1
@@ -32,7 +31,6 @@ dependencies:
   - gxx_impl_linux-64=7.2.0=hdf63c60_3
   - gxx_linux-64=7.2.0=h550dcbe_27
   - harfbuzz=1.7.6=h5f0a787_1
-  - hdf5=1.10.2=hba1933b_1
   - html5lib=1.0.1=py36h2f9c1c0_0
   - icu=58.2=h9c2bf20_1
   - intel-openmp=2018.0.3=0
@@ -55,7 +53,6 @@ dependencies:
   - libgcc-ng=7.2.0=hdf63c60_3
   - libgfortran-ng=7.2.0=hdf63c60_3
   - libgpuarray=0.7.6=h14c3975_0
-  - libopencv=3.4.1=h1a3b859_1
   - libopus=1.2.1=hb9ed12e_0
   - libpng=1.6.34=hb9fc6fc_0
   - libprotobuf=3.5.2=h6f1eeef_0
@@ -79,8 +76,6 @@ dependencies:
   - notebook=5.5.0=py36_0
   - numpy=1.14.5=py36hcd700cb_3
   - numpy-base=1.14.5=py36hdbf6ddf_3
-  - opencv=3.4.1=py36h6fd60c2_2
-  - openssl=1.0.2o=h20670df_0
   - pandoc=2.2.1=h629c226_0
   - pandocfilters=1.4.2=py36ha6701b7_1
   - parso=0.2.1=py36_0
@@ -91,7 +86,6 @@ dependencies:
   - pixman=0.34.0=hceecf20_3
   - prompt_toolkit=1.0.15=py36h17d85b1_0
   - ptyprocess=0.6.0=py36_0
-  - py-opencv=3.4.1=py36h0676e08_1
   - pygments=2.2.0=py36h0d3125c_0
   - pygpu=0.7.6=py36h035aef0_0
   - pyparsing=2.2.0=py36hee85983_1
@@ -124,32 +118,56 @@ dependencies:
   - xz=5.2.3=h55aa19d_2
   - zeromq=4.2.5=h439df22_0
   - zlib=1.2.11=ha838bed_2
+  - caffe2=0.8.dev=py36_2018.08.26
+  - boost=1.67.0=py36h3e44d54_0
+  - boost-cpp=1.67.0=h3a22d5f_0
+  - certifi=2018.4.16=py36_0
+  - cloudpickle=0.5.6=py_0
+  - dask-core=0.19.2=py_0
+  - h5py=2.8.0=py36h470a237_0
+  - imageio=2.3.0=py_1
+  - lmdb=0.9.22=h470a237_0
+  - networkx=2.2=py_1
+  - olefile=0.46=py_0
+  - pandas=0.23.4=py36hf8a1672_0
+  - pillow=5.0.0=py36_0
+  - python-gflags=3.1.2=py_0
+  - python-leveldb=0.193=py36_0
+  - pywavelets=1.0.1=py36h7eb728f_0
+  - pyyaml=3.13=py36h470a237_1
+  - scikit-image=0.14.0=py36hfc679d8_1
+  - snappy=1.1.7=hfc679d8_2
+  - toolz=0.9.0=py_0
+  - yaml=0.1.7=h470a237_1
+  - ca-certificates=2018.03.07=0
+  - caffe=1.0=py36hdb41b07_3
+  - ffmpeg=3.4=h7985aa0_0
+  - gflags=2.2.1=hf484d3e_0
+  - glog=0.3.5=hf484d3e_1
+  - hdf5=1.10.1=h9caa474_1
+  - leveldb=1.20=hf484d3e_1
+  - libboost=1.65.1=habcd387_4
+  - mkl-include=2019.0=118
+  - opencv=3.3.1=py36h0a11808_0
+  - openssl=1.0.2o=h20670df_0
+  - protobuf=3.5.2=py36hf484d3e_1
+  - py-boost=1.65.1=py36hf484d3e_4
+  - typing=3.6.4=py36_0
   - opencv3=3.1.0=py36_0
   - pip:
     - absl-py==0.2.2
     - astor==0.7.1
-    - cloudpickle==0.5.3
     - cython==0.28.4
-    - dask==0.18.1
+    - dask==0.19.2
     - gast==0.2.0
     - grpcio==1.13.0
-    - h5py==2.8.0
     - keras==2.2.0
     - keras-applications==1.0.2
     - keras-preprocessing==1.0.1
     - markdown==2.6.11
-    - networkx==2.1
     - opencv-python==3.4.1.15
-    - pillow==5.2.0
-    - protobuf==3.6.1
     - pydot==1.2.4
-    - pywavelets==0.5.2
-    - pyyaml==3.13
-    - scikit-image==0.14.0
-    - tensorboard==1.6.0
-    - tensorflow==1.6.0
     - termcolor==1.1.0
-    - toolz==0.9.0
     - tqdm==4.23.4
     - werkzeug==0.14.1
-prefix: /home/falreis/anaconda3/envs/hed
+prefix: /home/falreis/anaconda2/envs/hed
